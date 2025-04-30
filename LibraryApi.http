@@ -1,0 +1,15 @@
+@LibraryApi_HostAddress = https://localhost:7295
+
+GET {{LibraryApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+@id=0
+GET {{LibraryApi_HostAddress}}/api/book/{{id}}
+
+###
+
+GET {{LibraryApi_HostAddress}}/api/book
+
+###
