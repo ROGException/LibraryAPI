@@ -46,11 +46,15 @@ In the Solution Explorer, right-click the API project and select "Set as Startup
 
 4. **Apply Migrations**
 
-Open the Package Manager Console in Visual Studio and run:
+Open the `Package Manager` Console in Visual Studio and run:
 Update-Database
 ⚠️ This step is needed if you are using Entity Framework Core with Code-First Migrations.
 
-5. **Run the Application**
+5. **Set Connection String**
+
+Open `appsettings.json` and replace the placeholder with your actual SQL Server connection string.
+
+6. **Run the Application**
 
 Press F5 or click Start Debugging. The API will launch and Swagger UI should open automatically in your browser (usually at https://localhost:5001/swagger).
 
